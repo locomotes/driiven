@@ -7,7 +7,7 @@
 	02. Generals Settings
 	03. Navigation Settings
 	04. Header Settings
-	05. Method Settings
+	05. About Settings
 	06. Works Settings
 	07. Clients Settings
 	08. Crew Settings
@@ -416,7 +416,7 @@ nav {
 
 
 #header {
-	background: url('http://www.placehold.it/2560x1600') center center; /* BACKGROUND IMG */
+	background: url('../img/work1.jpg') center center; /* BACKGROUND IMG */
 	background-size: 100%;
     background-color: #f2f2f2;
     height: 600px;
@@ -459,16 +459,16 @@ nav {
 }
 
 
-/* 05. METHOD SETTINGS ================================================== */
+/* 05. ABOUT SETTINGS ================================================== */
 
 
-#method {
+#about {
     background: #FFF;
     position: relative;
     padding: 100px 0;
 }
 
-#method h3 {
+#about h3 {
 	text-align: center; 
 	padding-bottom: 20px;
 }
@@ -1377,7 +1377,7 @@ and (orientation : landscape) {
 	    position: relative;
 	}
 
-/* Method */
+/* About */
 
 	.whatwedo {
 		margin-bottom: 20px;
