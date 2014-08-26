@@ -1,0 +1,1536 @@
+/*
+
+	SIXWATS TEMPLATE  V1.0 BY SUPVIEW.BE
+	
+
+	01. Font Face
+	02. Generals Settings
+	03. Navigation Settings
+	04. Header Settings
+	05. Method Settings
+	06. Works Settings
+	07. Clients Settings
+	08. Crew Settings
+	09. Crew Alone Settings
+	10. Instagram Settings
+	11. Contact Settings
+	12. Footer Settings
+	13. Media Queries Settings
+		
+*/
+
+
+
+
+/* 01. FONT FACE ================================================== */
+
+
+@font-face {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 200;
+    src: local("Source Sans Pro ExtraLight"), local("SourceSansPro-ExtraLight"), url("http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/toadOcfmlt9b38dHJxOBGEzfSP8PFPIaW8d4wHl9LSw.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Source Sans Pro"), local("SourceSansPro-Regular"), url("http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/ODelI1aHBYDBqgeIAH2zlDLXPPWpYIJRcQ99gLLWTOQ.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Source Sans Pro Semibold"), local("SourceSansPro-Semibold"), url("http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/toadOcfmlt9b38dHJxOBGNF2eBBnhZOFf_rblGEjGiI.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Source Sans Pro Bold"), local("SourceSansPro-Bold"), url("http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/toadOcfmlt9b38dHJxOBGBgDywzySrQSFSEUM6OqW_g.woff") format("woff");
+}
+
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+	
+/* 02. GENERALS SETTINGS ================================================== */
+
+
+/* Container  */
+
+.container {	
+	position: relative;
+	background: #FFF;
+	overflow: hidden;
+}
+
+
+
+body, html {
+    background: #E2E4E7;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+    height: 100%;
+    margin: 0;
+    }
+
+
+/* Selected text Color */
+
+::-moz-selection {
+    background: none;
+    color: #5ac6ff;
+}
+
+::selection {
+    background: none;
+    color: #5ac6ff;
+}
+
+.centered {
+    text-align: center;
+}
+
+b, strong {
+    font-weight: 800;
+}
+
+/* Make a space */
+
+.space {
+    padding: 20px 0;
+}
+
+.lead {
+	padding-bottom: 80px;
+	text-align: center;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin-top: 27px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 46px;
+    font-weight: 100;
+    line-height: 46px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 0.33em;
+}
+
+h3 {
+    font: 20px 'Georgia', sans-serif;
+    color: #999;
+    padding-bottom: 20px;
+    font-style: italic;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size:15px;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+     padding-bottom: 20px;
+    font-weight: bold;
+}
+
+h5 {
+    font: 24px 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    font-weight: 100;
+    color:#FFF;
+}
+
+/* Link */
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #64b7e3;
+}  
+	
+/* Paragrah */
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    color: #646464;
+    line-height: 30px;
+}
+
+p a {
+    color:#646464;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+p a:hover {
+    color: #64b7e3;
+}
+
+/* Fade Effect */
+
+.no-touch { background: #FFF; }
+
+.no-touch  .fade {
+-webkit-transition: opacity 0.3s linear;
+   -moz-transition: opacity 0.3s linear;
+     -o-transition: opacity 0.3s linear;
+	-ms-transition: opacity 0.3s linear;
+		transition: opacity 0.3s linear;
+}
+
+.no-touch .fade.outOfView { opacity: 0; }
+.no-touch .fade.inView { opacity: 1; }
+
+/* Border Button */
+
+.border-button {
+	padding:10px 20px;
+	border:1px solid #DDD;
+	text-transform: uppercase;
+	font-size:11px;
+	letter-spacing: 2px;
+	font-weight: normal;
+	margin: 25px 0;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.border-button:hover {
+	background: #64b7e3;
+	color: #FFF;
+	border-color: #64b7e3;
+}
+
+
+/* 03. NAVIGATION SETTINGS ================================================== */
+
+
+
+/* Mobile Menu */
+
+
+button.et-rotate {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  z-index: 9999999;
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: none;
+  background: none;
+}
+
+
+.menu-off {
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background: rgba(30,31,32,0.70);
+}
+
+
+.nav-off, .nav-off li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+.nav-off a {
+	display: block;
+	position: relative;
+	z-index: 3;
+	width: 100%;
+	border-bottom: 1px solid rgba(255,255,255,0.32);
+	color: #FFF;
+	font-size: 100%;
+	padding:8% 0;
+	letter-spacing: 1px;
+	line-height: 100%;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.nav-off a:hover {
+	background: rgba(30,31,32,0.90);
+}
+
+ 
+ 
+/* Normal Nav */
+
+
+nav #logo a{
+    float: left;
+    z-index: 99999;
+    font-family: 'Montserrat', sans-serif;
+    color:#FFF;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 5px;
+    margin-top: 45px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+nav {
+    z-index: 999;
+    width: 100%;
+    height: 80px;
+}
+
+
+/* Some stylesheet reset */
+
+#nav, #nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* The main navigation bar */
+
+#nav {
+    width: 100%;
+ /* The menu will take the width of its container */;
+}
+
+#nav>li {
+    float: right;
+    position: relative;
+    padding: 20px 15px;
+}
+
+/* The main navigation links */
+
+#nav>li>a {
+	/* Layout */
+    display: block;
+	/* Typography */
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #FFF;
+    opacity: 1;
+    text-decoration: none;
+}
+ 
+/* Navigation Fixed */ 
+ 
+.cbp-af-header {
+	font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    height: 120px;
+    overflow: hidden;
+    background: rgba(255,255,255,0.0);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.cbp-af-header #nav a {
+    line-height: 80px;
+}
+
+/* Transitions */
+
+.cbp-af-header #logo,
+.cbp-af-header #nav a {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+/* Navigation effect on scroll down */
+
+.cbp-af-header.cbp-af-header-shrink {
+	height: 80px;
+	float: right;
+	background: rgba(255,255,255,0.95);
+	box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+}
+
+/* The button comes to the right place */
+
+.cbp-af-header.cbp-af-header-shrink .button {
+	margin-top:30px;
+	display: block;
+}
+
+/* The links goes up */
+
+.cbp-af-header.cbp-af-header-shrink #nav a {
+	line-height: 40px;
+	color: #434547;
+}
+	
+/* The links goes up */
+
+.cbp-af-header.cbp-af-header-shrink #logo a{
+	color:#434547;
+	margin-top: 28px;
+}
+
+/* The hover state of the links */
+
+#nav li:hover a, #nav li .selected, .cbp-af-header.cbp-af-header-shrink #nav a:hover, .cbp-af-header.cbp-af-header-shrink #nav .selected {
+    color:#64b7e3;
+}
+
+
+
+/* 04. HEADER SETTINGS ================================================== */
+
+
+#header {
+	background: url('http://www.placehold.it/2560x1600') center center; /* BACKGROUND IMG */
+	background-size: 100%;
+    background-color: #f2f2f2;
+    height: 600px;
+    position: relative;
+}
+
+
+/* Don't display the logo from the Mobile Device */
+
+.logo-phone {
+	display: none;
+}
+
+/* Huge Title */
+
+.huge-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: #FFF;
+}
+
+/* Go down text & Button */
+
+.go-down {
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    left: 0;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    height: 50px;
+}
+
+
+/* 05. METHOD SETTINGS ================================================== */
+
+
+#method {
+    background: #FFF;
+    position: relative;
+    padding: 100px 0;
+}
+
+#method h3 {
+	text-align: center; 
+	padding-bottom: 20px;
+}
+
+.whatwedo {
+  background: #F8F8F8;
+  max-height: auto;
+  text-align: center;
+  padding: 5% 0;
+  cursor: pointer;
+  position: relative;
+  
+}
+.whatwedo h4 {
+  padding-top: 15px;
+}
+
+.whatwedo img {
+	-webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.whatwedo p {
+	padding-top:0px; 
+	opacity: 0;
+	position: absolute;
+	padding:10%;
+	text-align: justify;
+	background: #F8F8F8;
+	transition: all 0.3s ease-in-out 0s;
+	-webkit-transform: translate3d(0,-30%,0);
+	-moz-transform: translate3d(0,-30%.0);
+	transform: translate3d(0,-30%,0);
+	
+}
+	
+.whatwedo:hover > p {
+	-webkit-transition: -webkit-transform 0.35s, color 0.35s;
+	-moz-transition: -webkit-transform 0.35s, color 0.35s;
+	transition: transform 0.35s, color 0.55s;
+	-webkit-transform: translate3d(0,-80%,0);
+	-moz-transform: translate3d(0,-80%,0);
+	transform: translate3d(0,-80%,0);
+	opacity: 1;
+}
+
+.whatwedo:hover > img {opacity: 0;}
+
+
+
+
+/* 06. WORKS SETTINGS ================================================== */
+
+
+
+#works {
+    background: #1e1f20;
+    position: relative;
+}
+
+.grid {
+	overflow: hidden;
+	margin: 0;
+	padding: 0 0 0 0;
+	width: 100%;
+	list-style: none;
+	text-align: center;
+}
+
+/* Common style */
+.grid figure {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	overflow: hidden;
+	margin: -0.35em;
+	width: 100%;
+	height: 400px;
+	background: #1e1f20;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	width: 100%; /* if you wan to edit the size of each work */
+	height: auto;
+	opacity: 0.3;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+figure.effect-hover figcaption::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: -webkit-linear-gradient(top, rgba(55,55,63,0) 0%, rgba(55,55,55,0.8) 75%);
+	background: linear-gradient(to bottom, rgba(55,55,63,0) 0%, rgba(55,55,55,0.8) 75%);
+	content: '';
+	opacity: 0;
+	-webkit-transform: translate3d(0,50%,0);
+	transform: translate3d(0,50%,0);
+}
+
+figure.effect-hover h2 {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	color: #FFF;
+	-webkit-transition: -webkit-transform 0.35s, color 0.35s;
+	transition: transform 0.35s, color 0.35s;
+	-webkit-transform: translate3d(0,-50%,0);
+	transform: translate3d(0,-50%,0);
+}
+
+figure.effect-hover figcaption::before,
+figure.effect-hover p {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-hover p {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 2em;
+	width: 100%;
+	color:#FFF;
+	opacity: 0;
+	-webkit-transform: translate3d(0,10px,0);
+	transform: translate3d(0,10px,0);
+}
+
+figure.effect-hover:hover h2 {
+	color: #fff;
+	-webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+	transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+}
+
+figure.effect-hover:hover figcaption::before ,
+figure.effect-hover:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+/*  Shadow Effect  */
+
+.shadow {
+	position: fixed;
+	background: rgba(30,31,32,0.70);
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	display: none;
+	overflow: hidden;
+	overflow-x: hidden;
+}
+
+/*  Close Button  */
+
+.closex {
+	position:absolute;
+	top:28px;
+	right:28px;
+	
+	height:18px;
+	width:18px;
+
+	background:url("../img/closex.png");	
+	background-size:cover;
+	cursor:pointer;
+	
+	transition:ease-in-out all .33s;
+	-webkit-transition:ease-in-out all .33s;
+	-moz-transition:ease-in-out all .33s;
+	-o-transition:ease-in-out all .33s;
+}
+
+.closex:hover {
+	opacity:0.5;
+	
+	transform:rotate(90deg);
+	-webkit-transform:rotate(90deg);
+	-moz-transform:rotate(90deg);
+	-o-transform:rotate(90deg);
+}
+
+/*  Content coming from left  */
+
+.content-left {
+	position: absolute;
+	z-index: 999999;
+	height: 100%;
+	max-height: 100%;
+	padding: 25px 0;
+	width: 70%;
+	overflow: scroll;
+	top:0;
+	left: 0;
+	-webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+	transform: translate3d(-100%,0%,0);
+    -webkit-transform: translate3d(-100%,0%,0);
+    -moz-transform: translate3d(-100%,0%,0);
+    -ms-transform: translate3d(-100%,0%,0);
+    -o-transform: translate3d(-100%,0%,0);
+	
+}
+
+/*  Content coming from right  */
+
+.content-right {
+	background: #FFF;
+	padding: 75px;
+	position: fixed;
+	z-index: 999999;
+	overflow: auto;
+	height: 100%;
+	width: 30%;
+	top:0;
+	right: 0;
+	-webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    transition: all 0.6s;
+	transform: translate3d(100%,0%,0);
+    -webkit-transform: translate3d(100%,0%,0);
+    -moz-transform: translate3d(100%,0%,0);
+    -ms-transform: translate3d(100%,0%,0);
+    -o-transform: translate3d(100%,0%,0);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+	
+}
+
+/*  Show Class  */
+
+.show{
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+ }
+
+/*  Single Element  */
+
+.single-element { 
+	  position: relative;
+	  top: 50%;
+	  transform: translateY(-50%);
+	  -webkit-transform: translateY(-50%);
+	  -moz-transform: translateY(-50%);
+}
+
+/*  Display mobile view : NONE  */
+
+
+.mobile-view {
+	display: none;
+	padding:10px 0;
+}
+
+
+/* 07. CLIENTS SETTINGS ================================================== */
+
+
+
+#clients_section {
+    background: #F9F9F9 no-repeat center;
+    padding:120px 0;
+}
+
+.clients_list {
+	border-bottom: 1px solid #eaeaea; 
+}
+
+.clients {
+	border-left: 1px solid #eaeaea; 
+}
+
+.clients:first-child {
+	border-left: none; 
+}
+
+
+
+/* 08. CREW SETTINGS ================================================== */
+
+
+
+#crew {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding-top: 100px;
+}
+
+
+#crew .member {
+    display: block;
+    float: left;
+    height: 460px;
+    position: relative;
+    background: url("../img/about-bg.png") repeat scroll left top rgba(0, 0, 0, 0);
+    cursor: help;
+    width: 25%;
+}
+
+#crew .image {
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    bottom: -20px;
+    display: block;
+    height: 460px;
+    opacity: 1;
+    position: absolute;
+    transition: opacity 0.2s ease-in-out 0s;
+    width: 100%;
+}
+
+#crew h4 {
+	padding-bottom: 5px;
+}
+
+#crew .text {
+    color: #3a4046;
+    opacity: 0;
+    padding: 0 20%;
+    position: absolute;
+    text-align: left;
+    top: 110px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#crew .text p {
+	font-size:14px;
+}
+
+#crew .text:hover {
+	-webkit-transition: -webkit-transform 0.35s, color 0.35s;
+	transition: transform 0.35s, color 0.35s;
+	-webkit-transform: translate3d(0,-5%,0);
+	transform: translate3d(0,-5%,0);
+}
+
+
+#crew .text p.title {
+	letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#crew .text .social {
+	padding:10px;
+}
+
+
+#crew  .text .fa {
+    display: inline-block;
+    margin-right: 15px;
+    margin-top:10px;
+    font-size:20px;
+}
+
+
+
+
+/* 09. CREW ALONE SETTINGS ================================================== */
+
+
+
+#crew-alone {
+    background: #FFF;
+    position: relative;
+    margin-top:0px;
+    padding: 80px 0;
+    display: none;
+}
+
+/* Your lovely picture */
+
+#crew-alone .picture {
+	width: 150px;
+	height: 150px;
+	display: block;
+	position: relative;
+	margin:20px auto;
+	padding:1%;
+	border:1px solid #DDD;
+	border-radius: 50%;
+}
+
+/* Social Icon */
+
+
+#crew-alone .fa {
+    display: inline-block;
+    margin-right: 15px;
+    margin-top:30px;
+    font-size:16px;
+    border: 1px solid #DDD;
+    border-radius: 50%;
+    padding:10px;
+    width: 40px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+
+#crew-alone .fa:hover {
+	background: #64b7e3;
+	border-color: #64b7e3;
+	color:#FFF;
+}
+
+
+
+/* 10. INSTAGRAM SETTINGS ================================================== */
+
+
+
+#instagram-feed {
+    background: #1e1f20;
+    position: relative;
+    margin-top:0px;
+    max-width: 100%;
+    padding: 0;
+
+}
+
+/* Centered text */
+
+
+#instagram-feed h4 {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	color: #FFF;
+	opacity: 1;
+	z-index: 9999;
+	font-family: 'Source Sans Pro',sans-serif;
+    font-size: 46px;
+    font-weight: 300;
+    line-height: 36px;
+	-webkit-transition: -webkit-transform 0.35s, color 0.35s;
+	transition: transform 0.35s, color 0.35s;
+	-webkit-transform: translate3d(0,-50%,0);
+	transform: translate3d(0,-50%,0);
+}
+
+#instagram-feed h4 span {
+	font-weight: 800;
+}
+
+
+#instagram .instagram-placeholder {
+	width: 16.66%;
+	height: auto;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+#instagram .instagram-placeholder img { 
+	width: 100%; 
+	margin: 0; 
+	padding: 0;    
+	opacity: 0.1;  
+	margin-bottom:-2.7%;    
+	-webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+#instagram .instagram-placeholder img:hover {
+	opacity: 0.5;
+}
+
+
+
+/* 11. CONTACT SETTINGS ================================================== */
+
+
+#contact {
+	padding-top:120px;
+	padding-bottom: 100px;
+	margin-top:-40px;
+}
+
+/* Information from the left */
+
+
+#contact .left-side {
+	border-right: 1px solid #DDD; 
+	padding-bottom: 80px;
+}
+
+#contact h4{
+	padding: 30px 0 5px 0;
+}
+
+#contact h4:first-child{
+	padding: 60px 0 5px 0;
+}
+
+
+/* Form */
+
+#contact form input,
+#contact form textarea{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 21px;
+    outline: none;
+    border: none;
+	border-bottom: 1px solid rgba(221,221,211,1);
+	color: rgba(255,255,255,1);
+	resize: vertical;
+	margin-bottom: 20px;
+	padding: 20px 0px;
+	width:100%;
+}
+
+/* SET A HEIGHT TO THE INPUT*/
+
+#contact form input{
+		resize: none;}
+
+/* SET A HEIGHT TO THE TEXTAREA*/
+
+#contact form textarea{
+		min-height:120px;
+		padding-top: 8px;}
+	
+/* BUTTON SENDER */
+
+#contact form .submit{
+		color:#FFF;
+		padding:20px 0;
+		outline: none;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		width: 100%;
+		text-transform: uppercase;
+	    float: left;
+	    display: block;
+		border:none;
+	    cursor: pointer;
+	    font-size: 11px;
+	    letter-spacing: 2px;
+	    color:#FFF;
+	    background-color: #434547;
+		-webkit-transition: background 0.2s ease-in-out;
+		-moz-transition: background 0.2s ease-in-out;
+		-ms-transition: background 0.2s ease-in-out;
+		-o-transition: background 0.2s ease-in-out;
+		transition: background 0.2s ease-in-out;
+		}
+
+/* BUTTON SENDER HOVER */
+
+#contact form .submit:hover{
+		background:#64b7e3;
+		color: #FFF;
+		cursor:pointer;}
+
+/* INPUT AND TEXTAREA WHEN NOTHING  */
+
+#contact form input:required,
+#contact form textarea:required{
+		background: none;
+		background-position:98% 6px;
+		background-repeat:no-repeat;
+		color: rgba(33,33,33,0.8);
+		box-shadow:inherit;}
+
+/* INPUT AND TEXTAREA WHEN VALID : GOOD */
+
+#contact form input:required:valid,
+#contact form textarea:required:valid{
+		background: none;
+		background-position:98% 6px;
+		background-repeat:no-repeat;
+		border-bottom: 1px solid rgba(90,90,90,0.5);
+		color:#222;}
+
+/* INPUT AND TEXTAREA WHEN INVALID : NOT GOOD GOES RED */
+
+#contact form input:focus:invalid,
+#contact form textarea:focus:invalid{
+		background:  no-repeat 98% 6px;
+		}
+
+#contact form .spam {
+		padding-top:20px; 
+}
+
+
+
+/* 12. FOOTER SETTINGS ================================================== */
+
+
+
+
+#footer {
+	padding:70px 0;
+	background: #1e1f20;
+	font-size: 68.5%;
+	font-weight: 800;
+}
+
+#footer p {
+	font-weight: 800;
+}
+
+#footer a {
+	color:#FFF; 
+	border-bottom:none; 
+	padding:10px;
+	 -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+#footer a:hover {
+	color: #64b7e3;
+}
+
+.logo-footer {
+	background: url("../img/logo_footer.png") #434547;
+	border-radius: 48px;
+    position: absolute;
+	width: 48px;
+	height: 48px;
+    margin: auto;
+    cursor: pointer;
+    right: 0; left: 0;
+    margin-top:-40px;
+    -webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.logo-footer a {
+	width: 100%; 
+	height: 100%; 
+	display: block;
+}
+
+
+.logo-footer:hover {	
+	background: url("../img/logo_footer.png") #434547 -49px;
+}
+
+     
+     
+            
+/* 13. MEDIA QUERIES  ============================================ */
+
+
+
+/* Media Queries for iPad in Portrait */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+
+/* Crew */
+
+	#crew .member {
+		width: 20%;
+		background: none;
+	}
+
+	.whatwedo {
+		margin-bottom: 20px;
+	}
+
+/* Contact */
+
+	#contact {padding: 100px 20px;}
+
+	#contact .left-side {
+		border: none;
+		text-align: center;
+		margin-top: 0;
+		width: 100%;
+	}
+	
+	#contact .right-side {
+		width: 100%;
+	}
+	
+
+	#contact h4:first-child {
+	    padding: 0px 0 5px;
+	}
+
+	#contact .push_one {
+		margin-left: 0;
+	}
+	
+	#contact .eight.columns {
+    width: 100%;
+    }
+
+    #instagram, .instagram-image, .instagram-placeholder {max-height: 300px; height: 300px;}
+
+	#instagram .instagram-placeholder {
+		width: 100%;
+		padding: 0;		
+	}
+
+/* Footer */
+
+	#footer {
+		text-align: center;
+	}
+	
+	#footer .text-right {
+		text-align: center;
+	}
+
+	.logo-footer {
+		display: none;
+	}
+
+
+ }
+
+/* Media Queries for iPad in Landscape */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) { 
+	
+	.cbp-af-header #logo {padding-left: 20px;}	
+	
+	section, .cbp-af-header #nav, #footer .row {padding-left:20px; padding-right: 20px;}
+
+	section #crew {padding-left: 0; padding-right: 0;}
+	
+	.grid figure { height: 250px;}
+	
+	.content-right { padding: 40px; }
+	
+	#works {padding-left: 0; padding-right: 0;}
+	
+	#crew {padding-bottom: 50px;}
+	
+	#crew .member {
+		width: 25%;
+		background: none;
+	}
+
+	#crew .member {
+	    height: 278px;
+	    margin-bottom: 140px;
+	}
+	
+	#crew .member p {display: none;}
+
+	#crew .member p.title {display: block;}
+
+	#crew .text .social {
+	    padding: 0px;
+	}
+
+	#crew .text .fa {
+	    margin-left: 15px;
+	    margin-right: 15px;
+	}
+
+	#crew .member .image {
+	    background-size: auto 90%;
+	    height: 278px;
+	    width: 100%;
+	    margin-top: 50px;
+	}
+
+	#crew .member .text {
+	    display: block;
+	    opacity: 1;
+	    padding: 0;
+	    text-align: center;
+	    top: 300px;
+	    width: 100%;
+	}
+
+	
+}
+
+
+@media screen and (max-width: 768px) {
+
+/* Header */
+
+	button.et-rotate {display: block;}
+
+	.cbp-af-header {
+		display: none;
+	}
+	
+	.logo-phone {
+		display: block;
+	}
+	
+	.huge-title {
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    margin: auto;
+	    width: 100%;
+	    line-height: 40px;
+	    height: 300px;
+	    padding:20px;
+	}
+	
+	.go-down {
+		display: none;
+	}
+
+	#header {
+		background-size: auto;
+	    height: 100%;
+	    position: relative;
+	}
+
+/* Method */
+
+	.whatwedo {
+		margin-bottom: 20px;
+		padding-top:15%;
+	}
+
+	.whatwedo p {
+		opacity: 1;
+		position: relative;
+		-webkit-transform: translate3d(0,0%,0);
+		-moz-transform: translate3d(0,0.0);
+		transform: translate3d(0,0%,0);
+		padding: 10px 30px;
+		text-align: center;
+	}
+	
+	.whatwedo:hover > p {
+		transition: all 0.3s ease-in-out 0s;
+		-webkit-transform: translate3d(0,0%,0);
+		-moz-transform: translate3d(0,0.0);
+		transform: translate3d(0,0%,0);
+	}
+	
+	.whatwedo:hover > img {opacity: 1;}
+
+
+/* Works */
+
+	.grid figure {height: 250px;}
+
+	.grid figure img {
+		position: relative;
+		display: block;
+		height: 100%;
+		opacity: 0.3;
+	}
+	
+/* Works Content */
+	
+	.content-right {
+		width: 100%;
+		text-align: center;
+		padding: 40px;
+		overflow-y: scroll;
+		position: absolute;
+	}
+
+	.content-left {
+		width: 0%;
+		position: relative;
+		height: auto;
+		display: none;
+	}
+	
+	.mobile-view {display: block;}
+
+/* Crew */
+
+	#crew {padding-bottom: 100px;}
+
+	#crew .member {
+		width: 50%;
+	}
+
+	#crew .member {
+	    height: 278px;
+	    margin-bottom: 140px;
+	}
+	
+	#crew .member p {display: none;}
+
+	#crew .member p.title {display: block;}
+
+	#crew .text .social {
+	    padding: 0px;
+	}
+
+	#crew .text .fa {
+	    margin-left: 15px;
+	    margin-right: 15px;
+	}
+
+	#crew .member .image {
+	    background-size: auto 90%;
+	    height: 278px;
+	    width: 100%;
+	    margin-top: 50px;
+	}
+
+	#crew .member .text {
+	    display: block;
+	    opacity: 1;
+	    padding: 0;
+	    text-align: center;
+	    top: 300px;
+	    width: 100%;
+	}
+
+/* Instagram */
+
+	#instagram-feed h4 {
+		padding: 0px 20px; 
+		font-size:40px;
+	}
+
+	#instagram .instagram-placeholder {
+		width: 100%;
+		padding: 0;
+	}
+
+	.tiles.four_up > li {
+	    width: 46%;
+	    border:none;
+	    padding-bottom: 10px;
+	}
+	
+	.clients_list{
+		border: none;
+	}
+
+/* Contact */
+
+	#contact {padding: 100px 20px;}
+
+	#contact .left-side {
+		border: none;
+		text-align: center;
+		margin-top: 0;
+	}
+
+	#contact h4:first-child {
+	    padding: 0px 0 5px;
+	}
+
+
+	#instagram .instagram-placeholder {
+		width: 100%;
+		padding: 0;		
+	}
+
+/* Footer */
+
+	#footer {
+		text-align: center;
+	}
+	
+	#footer .text-right {
+		text-align: center;
+	}
+
+	#footer .logo-footer {
+		margin-top:-170px;
+	}
+
+}
+
