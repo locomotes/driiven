@@ -833,18 +833,44 @@ figure.effect-hover:hover p {
     padding:120px 0;
 }
 
+.skillstop {
+	min-width: 800px;
+	/*border: 1px solid black;*/
+	margin: 0 auto;
+	/*text-align: left;*/
+	margin-bottom: 30px;
+}
+
+.skillstop .skills {
+	margin: 15px;
+}
+
 .clients_list {
 	border-bottom: 1px solid #eaeaea; 
 }
 
 .clients {
-	border-left: 1px solid #eaeaea; 
+	border-left: 1px solid #eaeaea;
+	/*border: 1px solid black;*/
+	min-height: 90px;
 }
 
 .clients:first-child {
 	border-left: none; 
 }
 
+.skills {
+	font-family: Source SourceSansPro-Regular, sans-serif;
+	color: #646464;
+	font-size: 15px;
+	line-height: 25px;
+	padding: 5px;
+}
+
+.skillstitle {
+	font-weight: bold;
+	font-style: italic;
+}
 
 
 /* 08. CREW SETTINGS ================================================== */
