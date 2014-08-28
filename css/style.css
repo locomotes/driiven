@@ -1,3 +1,7 @@
+/*Bourbon and Neat*/
+/*@import '../../bower-components/bourbon/dist/bourbon';*/
+/*@import 'bower_components/bourbon/dist/_bourbon';*/
+/*@import '../../bower_components/neat/app/assets/stylesheets/neat';*/
 /*
 
 	SIXWATS TEMPLATE  V1.0 BY SUPVIEW.BE
@@ -108,7 +112,7 @@ b, strong {
 }
 
 .lead {
-	padding-bottom: 80px;
+	padding-bottom: 60px;
 	text-align: center;
 }
 
@@ -473,6 +477,26 @@ nav {
 	padding-bottom: 20px;
 }
 
+.socialbar {
+	/*border: solid 1px black;*/
+	width: 500px;
+	height: 75px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.sociallinks .fa {
+	font-size: 30px;
+	margin-left: 40px;
+	margin-right: 40px;
+	opacity: 0.7;
+}
+
+.sociallinks:hover {
+	color: black;
+}
+
 .whatwedo {
   background: #F8F8F8;
   max-height: auto;
@@ -486,12 +510,13 @@ nav {
   padding-top: 15px;
 }
 
-.whatwedo img {
+.whatwedo .fa {
 	-webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
+    font-size: 40px;
 }
 
 .whatwedo p {
@@ -505,6 +530,8 @@ nav {
 	-webkit-transform: translate3d(0,-30%,0);
 	-moz-transform: translate3d(0,-30%.0);
 	transform: translate3d(0,-30%,0);
+	min-width:228px;
+	min-height: 150px;
 	
 }
 	
