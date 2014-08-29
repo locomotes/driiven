@@ -399,10 +399,11 @@ $('.goto').click(function(e){
 		/* SHOW ONLY 2 PICS ON MOBILE DEVICE */
 
 	    $("#instagram").instagram({
-	        clientId: '494a2117c72a4541a85ab40d77ff3fc7',
+	        // clientId: '494a2117c72a4541a85ab40d77ff3fc7',
+	        clientId: 'cae77c023dd24254a9772ee61074aafd',
 	        show: '1',
 	        updateInterval: 960*60*2,
-	        hash: 'rayban', /* HERE IS THE HASHTAG USED */
+	        // hash: 'rayban', /* HERE IS THE HASHTAG USED */
 	        image_size: 'standard_resolution'
 	    })
 			
@@ -413,10 +414,11 @@ $('.goto').click(function(e){
         
 
 	    $("#instagram").instagram({
-	        clientId: '494a2117c72a4541a85ab40d77ff3fc7',
+	        // clientId: '494a2117c72a4541a85ab40d77ff3fc7',
+	        clientId: 'cae77c023dd24254a9772ee61074aafd',
 	        show: '12',
 	        updateInterval: 960*60*2,
-	        hash: 'rayban', /* HERE IS THE HASHTAG USED */
+	        // hash: 'rayban', /* HERE IS THE HASHTAG USED */
 	        image_size: 'standard_resolution'
 	    })
 			

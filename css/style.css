@@ -834,7 +834,7 @@ figure.effect-hover:hover p {
 }
 
 .skillstop {
-	min-width: 800px;
+	min-width: 400px;
 	/*border: 1px solid black;*/
 	margin: 0 auto;
 	/*text-align: left;*/

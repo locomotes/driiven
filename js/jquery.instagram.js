@@ -12,7 +12,9 @@
   $.fn.instagram = function (options) {
     var that = this,
         updateTimer = null,
-        apiEndpoint = "https://api.instagram.com/v1",
+        // apiEndpoint = "https://api.instagram.com/v1",
+        // api.instagram.com/v1/users/229692025
+        apiEndpoint = "https://api.instagram.com/v1/users/229692025",
         settings = {
             hash: null
           , userId: null
@@ -94,7 +96,7 @@
         url += "/locations/" + settings.locationId + "/media/recent";
       }
       else {
-        url += "/media/popular";
+        url += "/media/recent";
       }
       
       settings.accessToken != null && (params.access_token = settings.accessToken);

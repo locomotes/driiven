@@ -25,7 +25,8 @@ var Instagram = function(elId, options) {
         $.ajax({
         	type:"GET",
         	//url:options.baseUrl+encodeURIComponent(options.searchString),
-        	url: "https://api.instagram.com/v1/tags/coffee/media/recent?access_token=fb2e77d.47a0479900504cb3ab4a1f626d174d2d",
+            // url: "https://api.instagram.com/v1/tags/coffee/media/recent?access_token=fb2e77d.47a0479900504cb3ab4a1f626d174d2d",
+        	url: "https://api.instagram.com/v1/users/229692025/media/recent/?client_id=cae77c023dd24254a9772ee61074aafd",
         	dataType: "jsonp",
         	success: function(_data) {
         	   
