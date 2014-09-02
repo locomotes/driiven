@@ -1,11 +1,11 @@
 <?php
 
-$to = "youremail@exemple.com";
+$to = "jgd@driiven.com";
 $from = "mail@example.com";
 
 $headers = "From: " . $from . "\r\n";
 
-$subject = "E-Mail From The Website";
+$subject = "Inquiry For Driiven Web Development Studio";
 $body = "Name: " . $_POST['name'];
 $body = "Content: " . $_POST['comments'];
 
