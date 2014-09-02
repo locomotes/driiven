@@ -420,7 +420,7 @@ nav {
 
 
 #header {
-	background: url('../img/work1.jpg') center center; /* BACKGROUND IMG */
+	background: url('../img/work4.jpg') center center; /* BACKGROUND IMG */
 	background-size: 100%;
     background-color: #f2f2f2;
     height: 600px;
@@ -885,6 +885,9 @@ figure.effect-hover:hover p {
     padding-top: 100px;
 }
 
+#crew a {
+	text-decoration: underline;
+}
 
 #crew .member {
     display: block;
@@ -1244,6 +1247,7 @@ figure.effect-hover:hover p {
 	color:#FFF; 
 	border-bottom:none; 
 	padding:10px;
+	display: inline;
 	 -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
@@ -1253,6 +1257,10 @@ figure.effect-hover:hover p {
 
 #footer a:hover {
 	color: #64b7e3;
+}
+
+#footer .fa {
+	font-size: 22px;
 }
 
 .logo-footer {
