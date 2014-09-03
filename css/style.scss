@@ -1,0 +1,49 @@
+*Bourbon and Neat*/
+@import '../bower_components/bourbon/dist/_bourbon';
+@import '../bower_components/neat/app/assets/stylesheets/_neat';
+
+@include black {
+	border: solid 1px black;
+}
+
+@include white {
+	border: solid 1px white;
+}
+
+body {
+	margin: 0px;
+}
+
+header{
+	@include outer-container;
+	background-color: black;
+	color: white;
+	#headtop {
+		@include span-columns(12);
+		@include white;
+		height: 150px; 
+	}
+	#headbottom {
+		@include span-columns(12);
+		@include white;
+		height: 100px; 
+	}
+}
+
+a {
+	text-decoration: none;
+  float: left;
+  // z-index: 99999;
+  font-family: 'Montserrat', sans-serif;
+  color:#FFF;
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: 5px;
+  margin-top: 45px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
