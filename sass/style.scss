@@ -1,6 +1,9 @@
 // *Bourbon and Neat
-@import '../bower_components/bourbon/dist/_bourbon';
-@import '../bower_components/neat/app/assets/stylesheets/_neat';
+// @import '../bower_components/bourbon/dist/_bourbon';
+// @import '../bower_components/neat/app/assets/stylesheets/_neat';
+
+@import '../../bower_components/bourbon/dist/bourbon';
+@import '../../bower_components/neat/app/assets/stylesheets/neat';
 
 
 // BEGIN TEMPLATE CSS #################################
@@ -1657,18 +1660,21 @@ and (orientation : landscape) {
 	border: solid 1px white;
 }
 
-body {
+body .resume {
 	margin: 0px;
 }
 
-header{
+header {
 	@include outer-container;
-	background-color: black;
-	color: white;
+	background-color: white;
 	#headtop {
 		@include span-columns(12);
-		@include white;
-		height: 150px; 
+		@include black;
+		height: 150px;
+		#headtop a {
+		color: #fff;
+		font-size: 40px;
+		} 
 	}
 	#headbottom {
 		@include span-columns(12);
@@ -1676,21 +1682,3 @@ header{
 		height: 100px; 
 	}
 }
-
-// a {
-// 	text-decoration: none;
-//   float: left;
-//   // z-index: 99999;
-//   csnt-family: 'Montserrat', sans-serif;
-//   color:#FFF;
-//   font-weight: bold;
-//   font-size: 25px;
-//   letter-spacing: 5px;
-//   margin-top: 45px;
-//   text-transform: uppercase;
-//   -webkit-transition: all 0.2s ease-in-out;
-//   -moz-transition: all 0.2s ease-in-out;
-//   -ms-transition: all 0.2s ease-in-out;
-//   -o-transition: all 0.2s ease-in-out;
-//   transition: all 0.2s ease-in-out;
-// }

@@ -1027,8 +1027,8 @@ figure.effect-hover:hover p {
   transition: all 0.2s ease-in-out; }
 
 .logo-footer a {
-  width: 100%;
-  height: 100%;
+  width: 48px;
+  height: 48px;
   display: block; }
 
 .logo-footer:hover {
@@ -1303,15 +1303,14 @@ figure.effect-hover:hover p {
 
   #footer .logo-footer {
     margin-top: -170px; } }
-body {
+body .resume {
   margin: 0px; }
 
 header {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  background-color: black;
-  color: white; }
+  background-color: white; }
   header:after {
     content: "";
     display: table;
@@ -1321,10 +1320,13 @@ header {
     display: block;
     margin-right: 2.35765%;
     width: 100%;
-    border: solid 1px white;
+    border: solid 1px black;
     height: 150px; }
     header #headtop:last-child {
       margin-right: 0; }
+    header #headtop #headtop a {
+      color: #fff;
+      font-size: 40px; }
   header #headbottom {
     float: left;
     display: block;
