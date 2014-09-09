@@ -1,9 +1,6 @@
 // *Bourbon and Neat
-// @import '../bower_components/bourbon/dist/_bourbon';
-// @import '../bower_components/neat/app/assets/stylesheets/_neat';
-
-@import '../../bower_components/bourbon/dist/bourbon';
-@import '../../bower_components/neat/app/assets/stylesheets/neat';
+@import '../bower_components/bourbon/dist/_bourbon';
+@import '../bower_components/neat/app/assets/stylesheets/_neat';
 
 
 // BEGIN TEMPLATE CSS #################################
@@ -1651,34 +1648,6 @@ and (orientation : landscape) {
 
 // END TEMPLATE CSS #################################
 
+// 
 
-@mixin black {
-	border: solid 1px black;
-}
 
-@mixin white {
-	border: solid 1px white;
-}
-
-body .resume {
-	margin: 0px;
-}
-
-header {
-	@include outer-container;
-	background-color: white;
-	#headtop {
-		@include span-columns(12);
-		@include black;
-		height: 150px;
-		#headtop a {
-		color: #fff;
-		font-size: 40px;
-		} 
-	}
-	#headbottom {
-		@include span-columns(12);
-		@include white;
-		height: 100px; 
-	}
-}
